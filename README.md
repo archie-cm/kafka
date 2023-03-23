@@ -65,3 +65,45 @@ Example:
 ```python
 python3 kafka_consumer.py
 ```
+Result: data.json
+
+### Create Topic with Partition
+
+1. Klik menu Topic and add a topic
+![Screenshot (156)](https://user-images.githubusercontent.com/108534539/227071068-65424f97-48ee-425c-8d45-fbb850eb71c7.png)
+
+2. Fill name of topic and number of partition
+![Screenshot (157)](https://user-images.githubusercontent.com/108534539/227071259-6c306d00-82f1-4e7f-a698-7b019606ed80.png)
+
+### Creates a record and publishes it to topic with partitions
+
+1. Fill name of topic in kafka_producer.py
+```python
+python[version] kafka_producer.py
+```
+
+Example:
+
+```python
+python3 kafka_producer.py
+```
+![Screenshot (160)](https://user-images.githubusercontent.com/108534539/227071634-d0c658bf-8fd2-45c3-9aae-aa592e891344.png)
+
+![Screenshot (161)](https://user-images.githubusercontent.com/108534539/227071858-6d232793-9184-4690-ab0e-43f10f0f2ef5.png)
+
+
+2. Fill name of topic in kafka_consumer_group.py
+### Consumes records from the topics
+
+```python
+python[version] kafka_consumer_group.py
+```
+
+Example:
+
+```python
+python3 kafka_consumer_group.py
+```
+![Screenshot (159)](https://user-images.githubusercontent.com/108534539/227071776-e1f41309-b707-44b0-812f-b7f53ba998e1.png)
+
+Result: msg1.json and msg2.json
